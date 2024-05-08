@@ -1,11 +1,14 @@
-
-import LandingPage from './pages/landingPage/landingPage';
-
+import LandingPage from "./pages/landingPage/landingPage";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
-    return (<>
-    <LandingPage/>
-    </>);
-}
- 
+  Aos.init();
+  return (
+    <>
+      <LandingPage />
+    </>
+  );
+};
+
 export default App;
